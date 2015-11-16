@@ -9,9 +9,11 @@ The Arduino Yun is a viable option for the future but at the moment there is no 
 
 ## Field Gateway
 
-In this example I am using a Raspberry Pi Model B+ running Raspbian with the latest Node.js distro. You will also need to install the express package which you can find at [http://expressjs.com/](http://expressjs.com/) and also the Azure IoT SDK which you can find at [https://github.com/Azure/azure-iot-sdks](https://github.com/Azure/azure-iot-sdks). Installing Raspbian, node, express and the Azure IoT SDK are all quite well documented so follow the instructions found on each of their websites. 
+In this example I am using a Raspberry Pi Model B+ running Raspbian with the latest Node.js distro. You will also need to install the express package which you can find at [http://expressjs.com/](http://expressjs.com/) and the Node.js Azure IoT SDK which you can find at [https://github.com/Azure/azure-iot-sdks](https://github.com/Azure/azure-iot-sdks). Installing Raspbian, node, express and the Azure IoT SDK are all quite well documented so follow the instructions found on each of their websites. 
 
-Once you have setup your raspberry Pi copy the raspberry-IoTHub-Server file from the raspberry directory of this solution to your device. To make copying files easy I am using [FileZilla](https://filezilla-project.org/)
+Once you have setup your raspberry Pi copy the raspberry-IoTHub-Server file from the raspberry directory of this solution to your device. To make copying files easy I am using [FileZilla](https://filezilla-project.org/) which is connecting to the Pi using SFTP.
+
+
 
 
 
