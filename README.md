@@ -35,7 +35,7 @@ The second issue is that the Pi has the Azure IoT hub device Id and not the Ardu
 ## Testing ##
 You can manually test the node.js app from any browser. Just enter http://<gateway URL>:<gateway Port>/?readings={%22temperature%22:12%2C%22humidity%22:21}&deviceid=86156a5e-99c2-438f-81c1-47dc0a36b85c in your browser. You should then see a log entry appear in the node.js console confirming the data.
 
-To send a cloud to device message manually use the Azure IoT Hub device explorer. On the messages to device tab select the device you want to send a message to and in the message box enter {"deviceId": "<arduino device Id", "message":"FlashLED"}
+To send a cloud to device message manually use the Azure IoT Hub device explorer. On the messages to device tab select the device you want to send a message to and in the message box enter {"deviceId": "<arduino device Id>", "message":"FlashLED"}
 
 
 
