@@ -20,6 +20,11 @@ Change the connectionString to contain the connection string of your newly provi
 
 By default this script creates a web server on port 8080 but you can change this by changing the `const PORT` to what ever value you wish. You will also need to change the server setting from localhost to your Pi's IP address or the name of your Pi.
 
+###arduino-iothub-client.ino
+The arduino sketch will need changing to fit your needs. The sketch contains a few constants which you should change to control how often the arduino sends a message to the Pi, how often it polls the Pi to check for messages and the device Id of the Arduino. Change the device Id in the arduino iothub file to what ever you want. In my example I'm using a Guid as the device Id but you could give it a friendlier name such as "Arduino1".
+You will also need to set the `gatewayAddress` and `gatewayPort` to your where your raspberry-iothub-server.js script is running. 
+
+
 
 
 
