@@ -1,9 +1,9 @@
 # AzureIoTFieldGateway
-Code samples for using a Raspberry PI with the Azure IoT SDK as a field gateway for Arduino and Photon Particles.  
+Code samples for using a Raspberry PI with the Azure IoT SDK as a field gateway for Arduino and Particle Photon.  
 
 ## Introduction
 
-At present connecting an Arduino to a Microsoft Azure IoTHub is problematic. The Arduino's don't have the processing power or security protocol support to enable communication with an IoTHub. Azure Event Hubs can be used by an Arduino but event hubs don't support messages to device scenario or device management.
+At present connecting an Arduino to a Microsoft Azure IoTHub is straightforward. The Arduino's don't have the processing power or security protocol support to enable communication with a Microsoft Azure IoT Hub. Azure Event Hubs can be used by an Arduino but event hubs don't support cloud to device message scenarios or device management.
 
 The Arduino Yun is a viable option for the future but at the moment there is no Python SDK for the Azure IoT SDK and OpenWRT does not support new enough versions of Node.js or Java to use the Azure IoT SDK.
 
@@ -16,9 +16,11 @@ You should also follow the Azure IoT SDK instruction for provisioning an IoT Hub
 Once you have setup your raspberry Pi copy the raspberry-IoTHub-Server.js file from the raspberry directory of this solution to your device. To make copying files easy I am using [FileZilla](https://filezilla-project.org/) which is connecting to the Pi using SFTP.
 
 ###raspberry-iothub-server.js
-Change the connectionString to contain the connection string to your IoTHub. You can obtain the connection string using device explorer. Go to the management tab, click list and then right click on the device showing and select the "copy connection string for selected device". 
+Change the connectionString to contain the connection string of your newly provisioned IoTHub. You can obtain the connection string using device explorer which is part of the IoT Hub SDK. Go to the management tab, click list and then right click on the device showing and select the "copy connection string for selected device". 
 
-By default this script creates a web server on port 8080 but you can change this by changing the `const PORT` to what ever value you wish. 
+By default this script creates a web server on port 8080 but you can change this by changing the `const PORT` to what ever value you wish. You will also need to change the server setting from localhost to your Pi's IP address or the name of your Pi.
+
+
 
 
 
